@@ -21,25 +21,25 @@ app.add_middleware(
 # Load all models and set class names
 models = {
     'corn': {
-        'model': load_model('ml_models/corn_model.keras'),
+        'model': load_model('corn_model.keras'),
         'class_names': ['Blight', 'Common Rust', 'Gray Leaf Spot', 'Healthy'],
         'confidence_threshold': 36,
         'img_size': (256, 256)
     },
     'pea': {
-        'model': load_model('ml_models/pea_model.keras'),
+        'model': load_model('pea_model.keras'),
         'class_names': ['Downy Mildew', 'Healthy', 'Leafminner', 'Powder Mildew'],
         'confidence_threshold': 50,
         'img_size': (256, 256)
     },
     'potato': {
-        'model': load_model('ml_models/potato_model.keras'),
+        'model': load_model('potato_model.keras'),
         'class_names': ['Early Blight', 'Late Blight', 'Healthy'],
         'confidence_threshold': 50,
         'img_size': (256, 256)
     },
     'rice': {
-        'model': load_model('ml_models/rice_model.keras'),
+        'model': load_model('rice_model.keras'),
         'class_names': [
             'bacterial leaf blight', 'brown spot', 'healthy',
             'leaf blast', 'leaf scald', 'narrow brown spot'
@@ -48,7 +48,7 @@ models = {
         'img_size': (256, 256)
     },
     'tomato': {
-        'model': load_model('ml_models/tomato_model.keras'),
+        'model': load_model('tomato_model.keras'),
         'class_names': [
             'Tomato Bacterial spot', 'Tomato Early blight', 'Tomato Late blight',
             'Tomato Leaf Mold', 'Tomato Septoria leaf spot',
@@ -60,7 +60,7 @@ models = {
         'img_size': (128, 128)
     },
     'wheat': {
-        'model': load_model('ml_models/wheat_model.keras'),
+        'model': load_model('wheat_model.keras'),
         'class_names': ['Healthy', 'septoria', 'stripe rust'],
         'confidence_threshold': 50,
         'img_size': (256, 256)
